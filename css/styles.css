@@ -1,65 +1,71 @@
-*,:after,:before{box-sizing:border-box}
+ *,:after,:before{box-sizing:border-box}
 html{font-size:100%}
 body{
     margin:0;
     padding:20px;
     font-family:Arial,Helvetica,sans-serif;
     font-size:1rem;
-    color:#fff}
-header,main,section{
+    }
+main,header,section{
     display:block;
     margin:0;
     padding:1.25rem;
-    border:1px solid red;
-    color:#fff}
-header {
-    background-color: aqua;
-    
-}
-header>h1{
-    text-align: center;
-}
-.container{
-    margin:auto;
-    max-width:75rem
-}
-@media screen and (min-width:640px){
-    .container{
-        display:flex;
     }
-}
 
-/*
-.container{
+header {
     display:flex;
     justify-content: center;
 }
-@media (min-width: 768px) and (max-width: 968px) {
-    .container{
-        display:flex;
-        flex-wrap: wrap;
-        background-color: aqua;
-    }}
-@media (max-width:768px)  {
-    .container{
-        flex-direction: column;
-    }}
-.container>div{
-    border: 1px solid black;
-    margin:0.5rem;
-    padding: 0 0.2rem;
+header>h1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
-.container>div>div{
-    margin:0 -0.25rem;
+.wrapper{
+    display: block;
+}
+.wrapper>section{
+    background-color: #c5c1c1;
+    margin:0.9rem;
+    padding: 0 0.4rem;
+    border:1px solid black;
+
+}
+.wrapper>section>div{
+    margin:0 -0.4rem;
     padding:0;
     display: flex;
     justify-content: end;
-    
 }
-.container>div>div>h2{
+.wrapper section:nth-child(1) div>h2{
+    background-color: #d59898;
+}
+.wrapper section:nth-child(2) div>h2{
+    background-color: #c14543;
+    color: azure;
+}
+.wrapper section:nth-child(3) div>h2{
+    background-color: #e5d198;
+}
+.wrapper>section>div>h2{
     margin:0;
     padding: 0.25rem;
     border: 1px solid black;
-    
 }
-  */
+ @media (min-width: 768px){
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .wrapper>section{
+        flex: 1 0 45%;
+    }
+}
+@media (min-width: 992px){
+    .wrapper{
+        flex-wrap: nowrap;
+    }
+    .wrapper>section{
+        flex: 1 0 30%;
+    }
+}

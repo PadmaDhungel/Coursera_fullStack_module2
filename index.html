@@ -6,86 +6,30 @@
     </head>
     <body>
         <main>
-            <header class="menu">
+            <header>
                 <h1>Our Menu</h1>
             </header>
-            <div class="container">
-                <section class="chicken" >
-                   <header><h2>Chicken</h2></header>
-                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    A, eveniet! Magni expedita voluptates natus delectus.
-                    Modi nisi animi amet assumenda nulla enim sed, omnis,
-                    eum sapiente delectus eos cupiditate nesciunt?
-                    Tempora deleniti dolorem repellat, in dicta reiciendis
-                    voluptatem iusto suscipit odio, vel nesciunt corporis
-                    quibusdam facere omnis rerum, repellendus aspernatur.
-                   </p>
-                </section>
-                <section class = "beef">
-                    <header><h2>Beef</h2></header>
+            <div class="wrapper">
+                <section class="chicken">
+                    <div><h2> Chicken</h2></div>
                     <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     A, eveniet! Magni expedita voluptates natus delectus.
-                     Modi nisi animi amet assumenda nulla enim sed, omnis,
-                     eum sapiente delectus eos cupiditate nesciunt?
-                     Tempora deleniti dolorem repellat, in dicta reiciendis
-                     voluptatem iusto suscipit odio, vel nesciunt corporis
-                     quibusdam facere omnis rerum, repellendus aspernatur.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corrupti assumenda enim quaerat necessitatibus est suscipit sapiente. Libero sequi assumenda facilis tempore consectetur possimus ipsum quaerat dignissimos quidem, temporibus qui.
+                    </p>
+                </section>
+                <section class ="beef">
+                    <div><h2> Beef</h2></div>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio, vel molestias rerum dolorem ipsam perferendis modi nulla autem, doloribus distinctio. Quo placeat quasi libero suscipit illum nam cupiditate obcaecati.
                     </p>
                 </section>
                 <section class="sushi">
-                    <header><h2>Sushi</h2></header>
+                    <div><h2> Sushi</h2></div>
                     <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     A, eveniet! Magni expedita voluptates natus delectus.
-                     Modi nisi animi amet assumenda nulla enim sed, omnis,
-                     eum sapiente delectus eos cupiditate nesciunt?
-                     Tempora deleniti dolorem repellat, in dicta reiciendis
-                     voluptatem iusto suscipit odio, vel nesciunt corporis
-                     quibusdam facere omnis rerum, repellendus aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel corporis, praesentium est cum aliquid inventore, eligendi quos assumenda aspernatur ex sunt. Suscipit praesentium necessitatibus iusto distinctio amet quia libero!
                     </p>
-                 </section>
+                </section>
             </div>
-        
-        
         </main>
-    <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+    </body>
+   
 </html>
